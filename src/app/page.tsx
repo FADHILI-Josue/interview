@@ -15,7 +15,7 @@ export default async function () {
     return <div className="w-screen">
         <div className="w-full mx-5 grid grid-cols-1 sm:grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4">
             {posts.map((e: post) => <Link href={`/posts/${e.id}`}>
-                <div className="w-full prose border border-slate-700">
+                <div className="w-full prose border border-slate-700 p-3">
                     <h1>{e.title}</h1>
                     <p>{e.body}</p>
                 </div>
