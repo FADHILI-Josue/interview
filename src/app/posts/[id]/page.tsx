@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 const page = async ({ params: { id }, }: { params: { id: number } }) => {
     const posts:post[] = await fetch('https://jsonplaceholder.typicode.com/posts').then((res) => res.json())
 
-    return <div className=" prose">
+    return <div className=" prose w-full p-10">
         <h1>{posts[id].title}</h1>
         <p>{posts[id].body}</p>
     </div>
